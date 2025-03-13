@@ -127,7 +127,7 @@ body {
   height: 100vh;
   background-color: white;
   display: grid;
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: 1fr 5fr;
   grid-template-columns: 1fr 4fr;
 }
 
@@ -149,11 +149,76 @@ body {
   grid-row: 3 / 4;
 }
 
-/* Header Section */
+/********************/
+/** Header Section **/
+/********************/
 .header-section {
   background-color: yellow;
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1.75fr 1fr;
+}
+
+/* Pics */
+.svg {
+  height: 1.5rem;
+}
+
+.avatar-pic {
+  height: 2.9rem;
+}
+
+.avatar-pic,
+.profile-pic {
+  border-radius: 50%;
+}
+
+.profile-pic {
+  height: 3.75rem;
+}
+
+/* Search Bar */
+.search-section {
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+}
+
+.search-bar {
+  margin-left: 0.75rem;
+  width: 90%;
+}
+
+/* Notification */
+.notification-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+/* User Greeting */
+.user-greeting-section {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+  margin-left: 2rem;
+  padding-bottom: 1rem;
+  align-items: center;
+  width: 75%;
+}
+
+.profile-pic {
+  justify-self: center;
+}
+
+/* Buttons */
+.button-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 1rem;
+  padding-right: 4rem;
+  justify-content: end;
 }
 
 .main-content {
