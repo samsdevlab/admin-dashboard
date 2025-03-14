@@ -116,6 +116,14 @@ select {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Space Grotesk Semi Bold";
+  src: url("./fonts/SpaceGrotesk-SemiBold.woff") format("woff"),
+    url("./fonts/SpaceGrotesk-SemiBold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Project Below */
 
 /* Colors:
@@ -186,7 +194,7 @@ body {
 /** Header Section - Structure **/
 /********************************/
 .header-section {
-  background-color: #f8f8f2; /*#f8f8f2 #ffffff*/
+  background-color: #faf3e0;
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1.75fr 1fr;
@@ -268,18 +276,62 @@ body {
 /**************************************/
 /** Main Content Section - Structure **/
 /**************************************/
+
+/* Colors:
+🟢 Core Colors:
+• Background - Midnight Blue - #1c2a44 - Dark, Horror Aesthetic
+• Headings & Titles: Muted Neon Yellow (#D4D400) – For that eerie, classic horror movie poster look.
+• Main Backgrounds - Soft White (#F8F8F2 for blog posts, etc. #faf3e0 (more parchment-like) for forms
+• Logos/Accents: Toxic Green (#39FF14 or ) - For glowing text, buttons, and sci-fi energy.
+• Error or Urgent Callouts: Blood Orange (#FF5F1F) - Horror/scientific urgency (error messages, warnings, or subtle highlights).
+• Dark UI Elements, to prevent neon overload - Steel Gray (#1C1C1C or #444444);
+• Deep Black (#121212) – Write posts with this. For high contrast, terminal-like aesthetics, and a “cyber” vibe.
+
+Best Background Choices for Your Aesthetic:
+Faded Gold (#e4c580) – Think of it like the glow of an old, buzzing streetlight in a horror movie or an aged paper backdrop for a punk zine. Fits the retro horror + punk DIY look.
+
+🔵 Secondary Cyber Accents (Optional):
+Deep Cyan (#00FFFF or #00B7EB) – For that Tron-like cyberpunk glow.
+Electric Purple (#6A0DAD or #8B5CF6) – Can be used in subtle areas to mix sci-fi mystery into the palette.
+*/
 .your-projects,
 .announcements,
 .trending {
-  background-color: aquamarine;
+  background-color: #faf3e0;
 }
 
 .main-content {
-  background-color: green;
+  background-color: #e4c580;
   display: grid;
   grid-template-columns: 2.5fr 1fr;
   gap: 1.25rem;
   padding: 1rem;
+}
+
+.your-projects,
+.announcements,
+.trending {
+  border-radius: 0.5rem;
+  display: grid;
+  align-content: start;
+}
+
+.main-content h3 {
+  font-size: 1rem;
+}
+
+.main-content h3,
+.main-content h4 {
+  font-family: "Space Grotesk Semi Bold";
+}
+
+.main-content h4 {
+  font-size: 0.9rem;
+}
+
+.main-content p {
+  font-family: "Space Grotesk";
+  font-size: 0.8rem;
 }
 
 .your-projects-section {
@@ -294,11 +346,33 @@ body {
   grid-column: 1 / 3;
 }
 
-.announcements-section {
+.your-projects {
   display: grid;
-  grid-template-rows: 1.5rem 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 1fr 0.55fr;
+  padding: 2rem;
 }
 
-.trending-section {
+.your-project-svgs-group {
   display: grid;
+  grid-auto-flow: column;
+  justify-self: end;
+  align-self: center;
+  gap: 1rem;
 }
+
+.your-project-svg {
+  height: 1.25rem;
+}
+
+.trending > img {
+  height: 2.9rem;
+}
+
+/* .announcements-section {
+  display: grid;
+  grid-template-rows: 1.5rem 1fr 1fr 1fr;
+} */
+
+/* .trending-section {
+  display: grid;
+} */
