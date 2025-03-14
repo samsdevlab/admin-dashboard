@@ -147,9 +147,9 @@ body {
   grid-template-columns: 1fr 4fr;
 }
 
-/********************************/
-/* Sidebar Section - Structure **/
-/********************************/
+/**********************/
+/* Sidebar Section ***/
+/********************/
 .sidebar {
   background-color: #121212;
   color: #d4d400;
@@ -186,24 +186,22 @@ body {
 /** Header Section - Structure **/
 /********************************/
 .header-section {
-  background-color: yellow;
+  background-color: #f8f8f2; /*#f8f8f2 #ffffff*/
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1.75fr 1fr;
+  font-family: "Space Grotesk";
+  color: #121212;
 }
 
 /* Pics */
-.svg {
+.header-svg {
   height: 1.5rem;
+  fill: #121212; /* • Dark UI Elements, to prevent neon overload - Steel Gray (#1C1C1C or #444444);*/
 }
 
 .avatar-pic {
   height: 2.9rem;
-}
-
-.avatar-pic,
-.profile-pic {
-  border-radius: 50%;
 }
 
 .profile-pic {
@@ -217,9 +215,16 @@ body {
   padding-left: 1.5rem;
 }
 
-.search-bar {
+#search-bar {
   margin-left: 0.75rem;
   width: 90%;
+  border: 2px solid #121212;
+  border-radius: 0.5rem;
+}
+
+#search-bar:focus {
+  outline: #121212;
+  border: 2px solid #8b5cf6;
 }
 
 /* Notification */
@@ -252,6 +257,12 @@ body {
   gap: 1rem;
   padding-right: 4rem;
   justify-content: end;
+}
+
+.button {
+  background-color: #39ff14;
+  border-radius: 0.5rem;
+  height: 2rem;
 }
 
 /**************************************/
