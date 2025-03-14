@@ -117,15 +117,31 @@ select {
 }
 
 /* Project Below */
+
+/* Colors:
+🟢 Core Colors:
+• Background - Midnight Blue - #1c2a44 - Dark, Horror Aesthetic
+• Headings & Titles: Muted Neon Yellow (#D4D400) – For that eerie, classic horror movie poster look.
+• Main Backgrounds - Soft White (#F8F8F2 for blog posts, etc. #faf3e0 (more parchment-like) for forms
+• Logos/Accents: Toxic Green (#39FF14 or ) - For glowing text, buttons, and sci-fi energy.
+• Error or Urgent Callouts: Blood Orange (#FF5F1F) - Horror/scientific urgency (error messages, warnings, or subtle highlights).
+• Dark UI Elements, to prevent neon overload - Steel Gray (#1C1C1C or #444444);
+• Deep Black (#121212) – Write posts with this. For high contrast, terminal-like aesthetics, and a “cyber” vibe.
+
+🔵 Secondary Cyber Accents (Optional):
+Deep Cyan (#00FFFF or #00B7EB) – For that Tron-like cyberpunk glow.
+Electric Purple (#6A0DAD or #8B5CF6) – Can be used in subtle areas to mix sci-fi mystery into the palette.
+*/
+
 body {
   display: flex;
   justify-content: center;
+  background-color: #1c2a44;
 }
 
 .main-container {
-  width: 75%;
+  width: 80%;
   height: 100vh;
-  background-color: white;
   display: grid;
   grid-template-rows: 1fr 5fr;
   grid-template-columns: 1fr 4fr;
@@ -135,20 +151,35 @@ body {
 /* Sidebar Section - Structure **/
 /********************************/
 .sidebar {
-  background-color: blue;
+  background-color: #121212;
+  color: #d4d400;
   grid-row: 1 / 3;
   display: grid;
-  grid-template-rows: 1fr 2fr 4fr;
+  grid-template-rows: 6rem 14rem 8.5rem;
   justify-content: center;
-  align-items: start;
 }
 
-.sidebar .upper-icon-group {
-  grid-row: 2 / 3;
+.dashboard {
+  font-family: "Rockwell Extra Bold";
+  font-size: 1.5rem;
+  justify-self: center;
+  align-self: center;
 }
 
-.sidebar .lower-icon-group {
-  grid-row: 3 / 4;
+.upper-icon-group,
+.lower-icon-group {
+  list-style-type: none;
+  font-family: "Space Grotesk";
+  font-size: 1rem;
+  display: grid;
+  grid-template-columns: 2rem 8rem;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.sidebar-svg {
+  fill: #d4d400;
+  height: 1.2rem;
 }
 
 /********************************/
