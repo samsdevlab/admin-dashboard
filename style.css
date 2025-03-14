@@ -161,7 +161,7 @@ body {
 
 .dashboard {
   font-family: "Rockwell Extra Bold";
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   justify-self: center;
   align-self: center;
 }
@@ -170,7 +170,7 @@ body {
 .lower-icon-group {
   list-style-type: none;
   font-family: "Space Grotesk";
-  font-size: 1rem;
+  font-size: 1.1rem;
   display: grid;
   grid-template-columns: 2rem 8rem;
   margin-bottom: 2rem;
@@ -179,7 +179,7 @@ body {
 
 .sidebar-svg {
   fill: #d4d400;
-  height: 1.2rem;
+  height: 1.1rem;
 }
 
 /********************************/
