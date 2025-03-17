@@ -209,11 +209,11 @@ body {
 }
 
 .avatar-pic {
-  height: 2.9rem;
+  height: 2.3rem;
 }
 
 .profile-pic {
-  height: 3.75rem;
+  height: 3.5rem;
 }
 
 /* Search Bar */
@@ -306,7 +306,7 @@ Electric Purple (#6A0DAD or #8B5CF6) – Can be used in subtle areas to mix sci-
   display: grid;
   grid-template-columns: 2.5fr 1fr;
   gap: 1.25rem;
-  padding: 1rem;
+  padding: 1rem 1.5rem 2.5rem 1.5rem;
 }
 
 .your-projects,
@@ -336,7 +336,7 @@ Electric Purple (#6A0DAD or #8B5CF6) – Can be used in subtle areas to mix sci-
 
 .main-content p {
   font-family: "Space Grotesk";
-  font-size: 0.8rem;
+  /* font-size: 0.8rem; */
 }
 
 /****************************/
@@ -353,6 +353,10 @@ Electric Purple (#6A0DAD or #8B5CF6) – Can be used in subtle areas to mix sci-
 
 .your-projects-section > h3 {
   grid-column: 1 / 3;
+}
+
+.your-projects > p {
+  font-size: 0.8rem;
 }
 
 .your-projects {
@@ -387,6 +391,15 @@ Electric Purple (#6A0DAD or #8B5CF6) – Can be used in subtle areas to mix sci-
 /** Trending Section **/
 /**************************/
 
+.announcements p,
+.trending p {
+  font-size: 0.7rem;
+}
+
+.trending-section {
+  align-content: end;
+}
+
 .trending {
   display: grid;
   grid-template-columns: 0.3fr 1fr;
@@ -394,6 +407,7 @@ Electric Purple (#6A0DAD or #8B5CF6) – Can be used in subtle areas to mix sci-
   gap: 1rem;
   justify-content: start;
   align-items: center;
+  margin-top: 0.3rem;
 }
 
 .trending img {
