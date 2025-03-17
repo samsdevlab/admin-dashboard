@@ -125,22 +125,6 @@ select {
 }
 
 /* Project Below */
-
-/* Colors:
-🟢 Core Colors:
-• Background - Midnight Blue - #1c2a44 - Dark, Horror Aesthetic
-• Headings & Titles: Muted Neon Yellow (#D4D400) – For that eerie, classic horror movie poster look.
-• Main Backgrounds - Soft White (#F8F8F2 for blog posts, etc. #faf3e0 (more parchment-like) for forms
-• Logos/Accents: Toxic Green (#39FF14 or ) - For glowing text, buttons, and sci-fi energy.
-• Error or Urgent Callouts: Blood Orange (#FF5F1F) - Horror/scientific urgency (error messages, warnings, or subtle highlights).
-• Dark UI Elements, to prevent neon overload - Steel Gray (#1C1C1C or #444444);
-• Deep Black (#121212) – Write posts with this. For high contrast, terminal-like aesthetics, and a “cyber” vibe.
-
-🔵 Secondary Cyber Accents (Optional):
-Deep Cyan (#00FFFF or #00B7EB) – For that Tron-like cyberpunk glow.
-Electric Purple (#6A0DAD or #8B5CF6) – Can be used in subtle areas to mix sci-fi mystery into the palette.
-*/
-
 body {
   display: flex;
   justify-content: center;
@@ -159,7 +143,7 @@ body {
   box-shadow: 0px 2px 2px #b8995d;
   z-index: 1;
 }
-/* .header-section, */
+
 .your-projects,
 .announcements,
 .trending {
@@ -216,7 +200,7 @@ body {
 /* Pics */
 .header-svg {
   height: 1.5rem;
-  fill: #121212; /* • Dark UI Elements, to prevent neon overload - Steel Gray (#1C1C1C or #444444);*/
+  fill: #121212;
 }
 
 .avatar-pic {
@@ -242,8 +226,7 @@ body {
 }
 
 #search-bar:focus {
-  outline: #121212;
-  border: 2px solid #8b5cf6;
+  border: 2px solid #007bff;
 }
 
 /* Notification */
@@ -279,34 +262,17 @@ body {
 }
 
 .button {
-  background-color: #39ff14;
+  background-color: #007bff;
+  border: none;
+  color: white;
   border-radius: 0.5rem;
   height: 2rem;
 }
 
-/**************************************/
-/** Main Content Section - Structure **/
-/**************************************/
+/***************************/
+/** Main Content Section **/
+/**************************/
 
-/* Colors:
-🟢 Core Colors:
-• Background - Midnight Blue - #1c2a44 - Dark, Horror Aesthetic
-• Headings & Titles: Muted Neon Yellow (#D4D400) – For that eerie, classic horror movie poster look.
-• Main Backgrounds - Soft White (#F8F8F2 for blog posts, etc. #faf3e0 (more parchment-like) for forms
-• Logos/Accents: Toxic Green (#39FF14 or ) - For glowing text, buttons, and sci-fi energy.
-• Error or Urgent Callouts: Blood Orange (#FF5F1F) - Horror/scientific urgency (error messages, warnings, or subtle highlights).
-• Dark UI Elements, to prevent neon overload - Steel Gray (#1C1C1C or #444444);
-• Deep Black (#121212) – Write posts with this. For high contrast, terminal-like aesthetics, and a “cyber” vibe.
-
-Best Background Choices for Your Aesthetic:
-Faded Gold (#e4c580) – Think of it like the glow of an old, buzzing streetlight in a horror movie or an aged paper backdrop for a punk zine. Fits the retro horror + punk DIY look.
-
-Burnt Umber(#8a4b08) - Works well as accent color against parchment white and Faded Gold 
-
-🔵 Secondary Cyber Accents (Optional):
-Deep Cyan (#00FFFF or #00B7EB) – For that Tron-like cyberpunk glow.
-Electric Purple (#6A0DAD or #8B5CF6) – Can be used in subtle areas to mix sci-fi mystery into the palette.
-*/
 .your-projects,
 .announcements,
 .trending {
@@ -319,7 +285,7 @@ Electric Purple (#6A0DAD or #8B5CF6) – Can be used in subtle areas to mix sci-
   display: grid;
   grid-template-columns: 2.5fr 1fr;
   gap: 1.25rem;
-  padding: 1rem 1.5rem 2.5rem 1.5rem;
+  padding: 1.5rem 1rem 2rem 1rem;
 }
 
 .your-projects,
@@ -349,7 +315,6 @@ Electric Purple (#6A0DAD or #8B5CF6) – Can be used in subtle areas to mix sci-
 
 .main-content p {
   font-family: "Space Grotesk";
-  /* font-size: 0.8rem; */
 }
 
 /****************************/
@@ -375,7 +340,7 @@ Electric Purple (#6A0DAD or #8B5CF6) – Can be used in subtle areas to mix sci-
 .your-projects {
   display: grid;
   grid-template-rows: 0.3fr 1fr 0.55fr;
-  border-left: 5px solid #3a3a9a;
+  border-left: 5px solid #4169e1;
 }
 
 .your-project-svgs-group {
@@ -426,5 +391,4 @@ Electric Purple (#6A0DAD or #8B5CF6) – Can be used in subtle areas to mix sci-
 
 .trending img {
   height: 2.3rem;
-  grid-column: 1 / 2;
 }
