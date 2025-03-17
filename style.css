@@ -114,7 +114,6 @@ select {
     url("./fonts/SpaceGrotesk-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
-  /* font-display: swap; */
 }
 
 @font-face {
@@ -123,7 +122,6 @@ select {
     url("./fonts/SpaceGrotesk-SemiBold.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 
 /* Project Below */
@@ -265,6 +263,7 @@ body {
 
 .button {
   background-color: #007bff;
+  border: none;
   color: white;
   border-radius: 0.5rem;
   height: 2rem;
