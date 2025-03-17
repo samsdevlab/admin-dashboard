@@ -301,6 +301,8 @@ body {
 Best Background Choices for Your Aesthetic:
 Faded Gold (#e4c580) – Think of it like the glow of an old, buzzing streetlight in a horror movie or an aged paper backdrop for a punk zine. Fits the retro horror + punk DIY look.
 
+Burnt Umber(#8a4b08) - Works well as accent color against parchment white and Faded Gold 
+
 🔵 Secondary Cyber Accents (Optional):
 Deep Cyan (#00FFFF or #00B7EB) – For that Tron-like cyberpunk glow.
 Electric Purple (#6A0DAD or #8B5CF6) – Can be used in subtle areas to mix sci-fi mystery into the palette.
@@ -373,6 +375,7 @@ Electric Purple (#6A0DAD or #8B5CF6) – Can be used in subtle areas to mix sci-
 .your-projects {
   display: grid;
   grid-template-rows: 0.3fr 1fr 0.55fr;
+  border-left: 5px solid #3a3a9a;
 }
 
 .your-project-svgs-group {
