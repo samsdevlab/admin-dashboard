@@ -148,7 +148,7 @@ body {
 }
 
 .main-container {
-  width: 80%;
+  width: 75%;
   height: 100vh;
   display: grid;
   grid-template-rows: 1fr 5fr;
@@ -298,6 +298,7 @@ Electric Purple (#6A0DAD or #8B5CF6) – Can be used in subtle areas to mix sci-
 .announcements,
 .trending {
   background-color: #faf3e0;
+  padding: 1.5rem;
 }
 
 .main-content {
@@ -312,16 +313,16 @@ Electric Purple (#6A0DAD or #8B5CF6) – Can be used in subtle areas to mix sci-
 .announcements,
 .trending {
   border-radius: 0.5rem;
-  display: grid;
-  align-content: start;
 }
 
 .main-content h3 {
   font-size: 1rem;
+  margin-bottom: 0.2rem;
 }
 
 .main-content h3,
-.main-content h4 {
+.main-content h4,
+.main-content h5 {
   font-family: "Space Grotesk Semi Bold";
 }
 
@@ -329,10 +330,18 @@ Electric Purple (#6A0DAD or #8B5CF6) – Can be used in subtle areas to mix sci-
   font-size: 0.9rem;
 }
 
+.main-content h5 {
+  font-size: 0.8rem;
+}
+
 .main-content p {
   font-family: "Space Grotesk";
   font-size: 0.8rem;
 }
+
+/****************************/
+/** Your Projects Section **/
+/**************************/
 
 .your-projects-section {
   grid-row: 1 / 3;
@@ -349,7 +358,6 @@ Electric Purple (#6A0DAD or #8B5CF6) – Can be used in subtle areas to mix sci-
 .your-projects {
   display: grid;
   grid-template-rows: 0.3fr 1fr 0.55fr;
-  padding: 2rem;
 }
 
 .your-project-svgs-group {
@@ -364,15 +372,31 @@ Electric Purple (#6A0DAD or #8B5CF6) – Can be used in subtle areas to mix sci-
   height: 1.25rem;
 }
 
-.trending > img {
-  height: 2.9rem;
+/****************************/
+/** Announcements Section **/
+/**************************/
+
+.announcements {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+  align-items: center;
 }
 
-/* .announcements-section {
-  display: grid;
-  grid-template-rows: 1.5rem 1fr 1fr 1fr;
-} */
+/****************************/
+/** Trending Section **/
+/**************************/
 
-/* .trending-section {
+.trending {
   display: grid;
-} */
+  grid-template-columns: 0.3fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1rem;
+  justify-content: start;
+  align-items: center;
+}
+
+.trending img {
+  height: 2.3rem;
+  grid-column: 1 / 2;
+}
