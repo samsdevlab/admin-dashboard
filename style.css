@@ -163,7 +163,7 @@ body {
 }
 
 .dashboard {
-  font-family: "Rockwell Extra Bold";
+  font-family: "Rockwell Extra Bold", "Courier New", Courier, monospace, serif;
   font-size: 1.7rem;
   justify-self: center;
   align-self: center;
@@ -172,7 +172,7 @@ body {
 .upper-icon-group,
 .lower-icon-group {
   list-style-type: none;
-  font-family: "Space Grotesk";
+  font-family: "Space Grotesk", sans-serif;
   font-size: 1.1rem;
   display: grid;
   grid-template-columns: 2rem 8rem;
@@ -193,7 +193,7 @@ body {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1.75fr 1fr;
-  font-family: "Space Grotesk";
+  font-family: "Space Grotesk", sans-serif;
   color: #121212;
 }
 
@@ -301,7 +301,7 @@ body {
 .main-content h3,
 .main-content h4,
 .main-content h5 {
-  font-family: "Space Grotesk Semi Bold";
+  font-family: "Space Grotesk Semi Bold", sans-serif;
 }
 
 .main-content h4 {
@@ -313,7 +313,7 @@ body {
 }
 
 .main-content p {
-  font-family: "Space Grotesk";
+  font-family: "Space Grotesk", sans-serif;
 }
 
 /****************************/
