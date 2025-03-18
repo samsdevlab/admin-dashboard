@@ -212,10 +212,15 @@ body {
 }
 
 /* Search Bar */
+
+.search-svg {
+  justify-self: end;
+}
+
 .search-section {
-  display: flex;
-  align-items: center;
-  padding-left: 1.5rem;
+  display: grid;
+  grid-template-columns: 0.1fr 1fr;
+  align-content: center;
 }
 
 #search-bar {
