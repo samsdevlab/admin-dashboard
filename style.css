@@ -236,10 +236,15 @@ body {
 
 /* Notification */
 .notification-section {
-  display: flex;
+  display: grid;
+  grid-template-columns: 0.1fr 0.2fr 0.4fr;
   align-items: center;
   justify-content: center;
-  gap: 1.2rem;
+  justify-items: center;
+}
+
+.avatar-owner {
+  justify-self: start;
 }
 
 /* User Greeting */
